@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../estilos/estilo.css">
+</head>
+<body>
+    <header>
+      <div class="tarjeta col-xl-1 m-auto" id="tarjeta">
+        <div class="cara trasera"><img src="../img/logoWoof.png" alt="logo-secundario"></div>
+        <div class="cara superior"><img src="../img/Logo2.png" alt="logo-principal"></div>
+      </div>  
+      <h1 class=" col-xl-3 col-12">Franco Schnauzer</h1>
+      <nav class="navbar navbar-expand-md col-xl-7 col-12">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="bi bi-list"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"><img src="../img/inicio.png" alt="anchor-inicio"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./juguetes.html"><img src="../img/juguetes.png" alt="anchor-juguete"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img class="active" src="../img/farmacia.png" alt="anchor-farmacia"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html"><img src="../img/contacto.png" alt="anchor-contacto"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </header> 
+    <main>
+        <button class="btn btn-primary m-auto btn-carrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart-dash"></i></button>
+        <h2 class="subtitulo" id="farmacia">Los mejores productos de farmacia</h2>
+        
+        <div class="container-fluid" id="container-card">
+
+        </div>
+        <!-- OFFCANVAS -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h3 id="offcanvasRightLabel">Tus productos</h3>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <table class="table" id="tabla-carrito">
+              <thead>
+                <tr>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Sub Total</th>
+                  <th scope="col">Opciones</th>
+                  
+                </tr>
+              </thead>
+              <tbody id="body-carrito">
+            </table>
+            <div id="productosTotales">
+            </div>
+          </div>
+        </div>
+        <!-- FIN OFFCANVAS -->
+    </main>
+    <footer>
+      <p>&#9400 Copyright 2021 Franco Schnauzer</p>
+        <div class="divFooter">
+          <button><i class="bi bi-instagram btn"></i></button>
+          <button><i class="bi bi-twitter btn"></i></i></button>
+          <button><i class="bi bi-facebook btn"></i></i></button>
+        </div>
+      <img src="https://centropet.com/wp-content/uploads/2019/05/mercado-pago.png" alt="Mercado-pago">
+  </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+
